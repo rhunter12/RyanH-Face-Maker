@@ -75,10 +75,6 @@ public class Face implements View.OnClickListener, SeekBar.OnSeekBarChangeListen
     Solution: I followed the example shown and made a few changes
               to match the implementation of the button onclick.
      */
-    int sliderR;
-    int sliderG;
-    int sliderB;
-    int sliderColor;
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
@@ -89,6 +85,10 @@ public class Face implements View.OnClickListener, SeekBar.OnSeekBarChangeListen
 
     }
 
+    int sliderR;
+    int sliderG;
+    int sliderB;
+    int sliderColor;
     /*
     Reads input from seekbar and makes a color,
     called sliderColor from the three values.
@@ -99,13 +99,13 @@ public class Face implements View.OnClickListener, SeekBar.OnSeekBarChangeListen
             case R.id.r_bar:
                 sliderR = progress;
                 System.out.println(sliderR);
-                break;
+                //break;
             case R.id.g_bar:
                 sliderG = progress;
-                break;
+                //break;
             case R.id.b_bar:
                 sliderB = progress;
-                break;
+                //break;
         }
         sliderColor = Color.argb(255, sliderR, sliderG, sliderB);
 
@@ -143,6 +143,7 @@ public class Face implements View.OnClickListener, SeekBar.OnSeekBarChangeListen
                 skinColor.setColor(sliderColor);
                 break;
         }
+        myFaceView.invalidate();
     }
 
 
