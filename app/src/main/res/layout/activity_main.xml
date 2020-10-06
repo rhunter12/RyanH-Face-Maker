@@ -25,8 +25,7 @@
             android:id="@+id/r_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="255"
-            android:progress="100" />
+            android:max="255" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,8 +43,7 @@
             android:id="@+id/g_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="255"
-            android:progress="100" />
+            android:max="255" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,8 +61,7 @@
             android:id="@+id/b_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="255"
-            android:progress="100" />
+            android:max="255" />
     </LinearLayout>
 
     <Spinner
@@ -74,6 +71,7 @@
 
 
     <RadioGroup
+        android:id="@+id/rGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -81,7 +79,7 @@
             android:id="@+id/skin_radio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true"
+            android:checked="false"
             android:text="Skin" />
 
         <RadioButton
